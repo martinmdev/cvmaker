@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Make your CV. Save it as a .json file on your computer. Import it and edit it again any time. Export your CV in a PDF template. More coming soon.">
+    <meta name="author" content="Martin Marinov">
+    <title>CVmaker</title>
+
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="/highlight/default.css" rel="stylesheet">
+    <script src="/highlight/highlight.pack.js"></script>
+
+<!-- Scripts -->
+    <script src="/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="//fonts.googleapis.com/css?family=Share%20Tech|Shareo" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+
+    <script src="//unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <div class="nav-container container-fluid">
+            <a class="navbar-brand" href="/">
+                <img id="logo" src="/logo.png" alt="CVmaker" title="CVmaker"/>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <top-navigation></top-navigation>
+            </div>
+        </div>
+    </nav>
+
+    <app :cv-data="cvData"></app>
+</div>
+</body>
+</html>
